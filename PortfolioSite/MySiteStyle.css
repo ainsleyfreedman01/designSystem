@@ -66,6 +66,8 @@ html {
 
 h2.aboutMe, h2.mission, h2.projects{
     padding-left: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .header {
@@ -76,4 +78,26 @@ h2.aboutMe, h2.mission, h2.projects{
 
 a:link {
     color: whitesmoke;
+}
+
+.information p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 50px;
+    padding-right: 300px;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.information a {
+    color:black;
+}
+
+.information img {
+    float: right;
+    width: 200px;
+    height: auto;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 175px;
+    margin-top: -20px;
 }
