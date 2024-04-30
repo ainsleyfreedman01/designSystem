@@ -1,103 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Shadows+Into+Light&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Shadows+Into+Light&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light:regular);
 
-nav {
-    position: sticky;
-    top: 0;
-    background-color: #ada1a1a2;
-    margin: 0, 10px;
-    width: 100%;
-    
-}  
-.navigation ul {
-    padding: 20px 10px;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-    left: 0;
-    z-index: 1000;
-    overflow: auto;
+.navigation {
+  position: sticky;
+  top: 0;
+  background-color: rgb(192, 180, 180);
+  opacity: 100%;
+  width: 100%;
+  height: 55px;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000; /* Add z-index to ensure it stays above other content */
 }
 
+.navigation ul {
+  margin: 0;
+  margin-top: -5px;
+  padding: 0;
+}
 .navigation li {
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    color: whitesmoke;
-    display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: whitesmoke;
+  display: inline-block;
+  padding: 10px;
+  padding-top: 20px;
 }
 
 h1.welcomeMessage {
-    text-align: center;
-    font-family: 'Lato';
-    font-size: 75px;
-    color: whitesmoke;
-    background-color: black;
-    opacity: 0.9;
-    
-    
+  text-align: center;
+  font-family: "Lato";
+  font-size: 75px;
+  color: whitesmoke;
+  background-color: black;
+  opacity: 0.9;
 }
 
 body {
-    background-color: #F2F2F2;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-a{
-    text-decoration: none
+a {
+  text-decoration: none;
 }
 
 a:visited {
-    text-decoration: none;
-    color: whitesmoke;
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 html {
-    overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .information h2 {
-    font-size: 40px;
-    font-family:'Shadows Into Light';
+  font-size: 40px;
+  font-family: "Shadows Into Light";
 }
 
-h2.aboutMe, h2.mission, h2.projects{
-    padding-left: 50px;
-    padding-bottom: 0;
-    margin-bottom: 0;
+h2.aboutMe,
+h2.mission,
+h2.projects {
+  padding-left: 50px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .header {
-    background-image: url("night_sky.jpg");
-    background-position: center;
-    padding: 20px;
+  background-image: url("night_sky.jpg");
+  background-position: center;
+  padding: 20px;
 }
 
 a:link {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 .information p {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-left: 50px;
-    padding-right: 300px;
-    margin-top: 0;
-    font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-left: 50px;
+  padding-right: 300px;
+  margin-top: 0;
+  font-size: 15px;
+  position: relative;
 }
 
 .information a {
-    color:black;
+  color: black;
 }
 
 .information img {
-    float: right;
-    width: 200px;
-    height: auto;
-    position: relative;
-    margin-left: 15px;
-    margin-right: 175px;
-    margin-top: -20px;
+  float: right;
+  width: 200px;
+  height: auto;
+  margin-left: 15px;
+  margin-right: 35px; /* Adjust this value to set the distance */
+  margin-top: -20px;
 }
