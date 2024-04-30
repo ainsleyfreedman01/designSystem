@@ -8,7 +8,7 @@
   background-color: rgb(192, 180, 180);
   opacity: 100%;
   width: 100%;
-  height: 55px;
+  height: auto;
   padding: 15px 0;
   text-align: center;
   z-index: 1000; /* Add z-index to ensure it stays above other content */
