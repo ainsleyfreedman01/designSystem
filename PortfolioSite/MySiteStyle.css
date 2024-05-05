@@ -95,14 +95,24 @@ a.pageLink:hover {
   transition: color 0.3s ease;
 }
 
-.information p {
-  font-family: "Reddit Sans", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding-left: 50px;
-  padding-right: 300px;
+.information p, .contact {
+  font-family: "Ubuntu Sans", Arial, Helvetica, sans-serif;
+  margin-left: 50px;
+  margin-right: 300px;
   margin-top: 0;
   font-size: 17px;
   position: relative;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.contact {
+  border: 1.5px solid black;
+  border-radius: 5px;
+  padding: 5px 5px 5px 4px;
+  background-color: rgb(229, 240, 244);
+  min-width: 300px;
+  max-width: 300px;
 }
 
 .information a {
@@ -111,7 +121,7 @@ a.pageLink:hover {
 }
 
 .information a:hover {
-  color: rgb(106, 194, 249);
+  color: rgb(34, 167, 249);
   transition: color 0.3s ease;
 }
 
