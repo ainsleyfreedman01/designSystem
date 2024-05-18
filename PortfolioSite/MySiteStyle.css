@@ -17,7 +17,7 @@ body::before {
   left: 0;
   width: 15vw;
   height: 100%;
-  background: linear-gradient(to bottom, black 0%, rgb(72, 71, 71) 100%); /* Change this to the color you want for the left side */
+  background: linear-gradient(to bottom, black 0%, rgb(72, 71, 71) 100%);
   z-index: -1;
   animation: gradientAnimation 10s infinite linear;
   opacity: 1; /* Start with full opacity */
@@ -31,7 +31,7 @@ body::after {
   right: 0;
   width: 15vw;
   height: 100%;
-  background: linear-gradient(to bottom, black 0%, rgb(72, 71, 71) 100%); /* Change this to the color you want for the left side */
+  background: linear-gradient(to bottom, black 0%, rgb(72, 71, 71) 100%);
   z-index: -1;
   animation: gradientAnimation 10s infinite linear;
   opacity: 1; /* Start with full opacity */
@@ -166,7 +166,7 @@ a.pageLink:hover {
 }
 
 img {
-  width: 200px;
+  width: 220px;
   height: auto;
   margin-bottom: 5px;
   /* Adjust this value to set the distance */
