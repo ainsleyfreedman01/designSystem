@@ -1,7 +1,7 @@
 const playBoard = document.querySelector(".play-board");
 const scoreElement = document.querySelector(".score");
 const highScoreElement = document.querySelector(".high-score");
-const controls = document.querySelector(".controls");
+const controls = document.querySelectorAll(".controls i");
 
 let gameOver = false;
 let foodX, foodY;
@@ -45,13 +45,11 @@ controls.forEach(button => button.addEventListener("click", () => changeDirectio
 
 
 const initGame = () => {
-    if (gameOver) {
-        return handleGameOver();
-    }
+    if (gameOver) return handleGameOver();
     let html = `<div class="food" style="grid-area: ${foodY} / ${foodX}"></div>`;
     if (snakeX === foodX && snakeY === foodY) {
         updateFoodPosition();
-        snakeBody.push([foodX, foodY]);
+        snakeBody.push([foodY, foodX]);
         score++;
         highScore = score >= highScore ? score : highScore;
 
@@ -68,7 +66,7 @@ const initGame = () => {
     }
     snakeBody[0] = [snakeX, snakeY];
 
-    if (snakeX <= 0 || snakeX >= 30 || snakeY <= 0 || snakeY >= 30) {
+    if (snakeX <= 0 || snakeX > 30 || snakeY <= 0 || snakeY > 30) {
         return gameOver = true;
     }
 
