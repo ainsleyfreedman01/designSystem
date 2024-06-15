@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e3f2fd;
+}
+
+.wrapper {
+    height: 70vmin;
+    width: 65vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #293447;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.game-details {
+    display: flex;
+    justify-content: space-between;
+    color: #b8c6dc;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 20px 27px;
+}
+
+.controls {
+    display: none;
+    justify-content: space-between;
+}
+
+.controls i {
+    font-size: 1.3rem;
+    width: calc(100%/4);
+    text-align: center;
+    border-right: 1px solid #171b26;
+    color: #b8c6dc;
+    font-size: 1.2rem;
+    padding: 25px 0;
+    cursor: pointer;
+}
+
+.play-board {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background-color: #212837;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-board .food {
+    color: #ff003d;
+}
+
+.play-board .head {
+    color: #60cbff;
+}
+
+@media screen and (max-width: 768px) {
+    .controls {
+        display: flex;
+    }
+
+    .controls i {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+
+    .wrapper {
+        height: 115vmin;
+        width: 90vmin;
+    }
+
+    .game-details {
+        font-size: 1rem;
+    }
+}
