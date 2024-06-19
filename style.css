@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+}
+
+.navigation {
+    position: sticky;
+    top: 0;
+    background-color: rgb(8, 8, 41);
+    opacity: 100%;
+    width: 100vw;
+    height: auto;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    /* Add z-index to ensure it stays above other content */
+    margin-left: -8px;
+    margin-top: -8px;
+}
+
+.navigation ul {
+    margin: 0;
+    margin-top: -5px;
+    padding: 10px;
+}
+
+.navigation li {
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    font-size: clamp(1.5vw, 3vw, 40px);
+    display: inline-block;
+    padding: 10px;
+    padding-top: 20px;
+    font-weight: 400;
+}
+
+footer {
+    background-color: rgb(8, 8, 41);
+    color: whitesmoke;
+    padding: 0px 8px 50px 8px;
+    margin: 5vw 0 -1vw 0;
+    width: 100%;
+    margin-left: -8px;
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    overflow: hidden;
+    position: relative;
+}
+
+footer h2 {
+    margin-left: 5vw;
+    margin-top: 9.5vw;
+    
+}
+
+footer a.email-address{
+    color: whitesmoke;
+    position: absolute;
+    left: 48vw;
+    top: 6.9vw;
+    font-size: 2.5vw;
+}
+
+footer a.linkedin-link {
+    color: whitesmoke;
+    font-size: 2.5vw;
+    position: absolute;
+    left: 48vw;
+    top: 14.3vw;
+    text-decoration-skip-ink: none;
+    text-underline-offset: .37vw;
+}
+
+#email, #linkedin {
+    color: whitesmoke;
+    font-size: 5vw;
+    position: absolute;
+    z-index: 1000;
+}
+
+#email {
+    left: 40vw;
+    top: 5.5vw;
+    
+}
+
+#linkedin {
+    left: 40vw;
+    top: 12.5vw;
+}
+
+
+a.pageLink {
+    color: whitesmoke;
+    text-decoration: none;
+    position: relative;
+    margin: 0 calc(3vw - 7px);
+}
+
+a.pageLink::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 2.5px;
+    width: 0;
+    background-color: whitesmoke;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+a.pageLink:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.aboutMeContainer {
+    background-color: rgba(44, 170, 105, 0.65);
+    color: #0d3d29;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px 0 30px;
+    border-radius: 50px;
+    margin: 45px 5% 0px 5%; /*top, right, bottom, left*/
+    align-items: center;
+    flex-shrink: 0.5;
+}
+
+.missionContainer {
+    background-color: rgba(60, 179, 113, 0.4);
+    border-radius: 50px;
+    padding: 10px 30px 1px 30px;
+    margin: 30px 5% 0px 5%;
+}
+
+.projectsContainer {
+    background-color: rgba(46, 139, 87, 0.85);
+    color: whitesmoke;
+    padding: 10px 30px 1px 30px;
+    margin: 30px 5% 0px 5%;
+    border-radius: 50px;
+}
+
+.text-content h2 {
+    flex: 1;
+    text-decoration: underline;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 4vw;
+    flex-direction: column;
+    font-family: 'Playfair Display','Times New Roman';
+    padding-top: -5px;
+}
+
+.text-content p {
+    display: flex;
+    flex: 1 1 100%;
+    word-wrap: break-word;
+    font-size: 2.4vw;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    flex-direction: column;
+    padding-right: 20px;
+    font-size: 2.2vw;
+    font-family: 'Open Sans','Times New Roman';
+    line-height: 3.3vw;
+}
+
+.image-content img {
+    border-radius: px;
+    width: 22.5vw;
+    margin-right: 10px;
+    
+}
+
+
+@media (max-width: 1024px) {
+    .aboutMeContainer, .missionContainer, .projectsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content h2 {
+        font-size: 5vw;
+        margin-bottom: 1.5vw;
+        text-align: center;
+    }
+
+    .text-content p {
+        margin: 0;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        font-size: 2.85vw;
+        text-align: center;
+    }
+
+    .aboutMeContainer img {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+        width: 45vw;
+    }
+}
