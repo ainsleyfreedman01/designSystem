@@ -63,7 +63,7 @@ footer a.email-address{
     font-size: 2.5vw;
 }
 
-footer a.phone-number {
+footer a.linkedin-link {
     color: whitesmoke;
     font-size: 2.5vw;
     position: absolute;
@@ -73,7 +73,7 @@ footer a.phone-number {
     text-underline-offset: .37vw;
 }
 
-#email, #phone {
+#email, #linkedin {
     color: whitesmoke;
     font-size: 5vw;
     position: absolute;
@@ -86,7 +86,7 @@ footer a.phone-number {
     
 }
 
-#phone {
+#linkedin {
     left: 40vw;
     top: 12.5vw;
 }
