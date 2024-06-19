@@ -49,7 +49,7 @@ const initGame = () => {
     let html = `<div class="food" style="grid-area: ${foodY} / ${foodX}"></div>`;
     if (snakeX === foodX && snakeY === foodY) {
         updateFoodPosition();
-        snakeBody.push([foodY, foodX]);
+        snakeBody.push([foodY, foodX]); //row, column
         score++;
         highScore = score >= highScore ? score : highScore;
 
@@ -61,7 +61,7 @@ const initGame = () => {
     snakeX += velocityX;
     snakeY += velocityY;
 
-    for (let i = snakeBody.length - 1; i > 0; i--) {
+    for (let i = snakeBody.length - 1; i >= 0; i--) {
         snakeBody[i] = snakeBody[i - 1];
     }
     snakeBody[0] = [snakeX, snakeY];
@@ -71,7 +71,8 @@ const initGame = () => {
     }
 
     for (let i = 0; i < snakeBody.length; i++) {
-        html += `<div class="head" style="grid-area: ${snakeBody[i][1]} / ${snakeBody[i][0]}"></div>`;
+        html += `<div class="head" style="grid-area: ${snakeBody[i][1]} / ${snakeBody[i][0]}"></div>`; 
+        // grid-row-start / grid-column-start
         if (i !== 0 && snakeBody[0][0] === snakeBody[i][0] && snakeBody[0][1] === snakeBody[i][1]) {
             gameOver = true;
         }
