@@ -1,0 +1,154 @@
+ul li {
+    text-transform: uppercase;
+}
+
+div.section {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 0px 20px;
+    margin: 15px 10px;
+    background-color: #f3f1eae4;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(43, 42, 42);
+    text-decoration: underline;
+}
+
+.palette {
+    margin-bottom: 40px; /* Adjust the space between palettes */
+}
+
+.palette h2, .section .typography-examples .example h2, .section .icon-examples .example h2 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #5b5454;
+}
+
+.palette ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; /* Adjust the space between colors */
+}
+
+.palette li {
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Red shades */
+#red-shade1 { background-color: #ff8b8e; }
+#red-shade2 { background-color: #ff3d41; }
+#red-shade3 { background-color: #ff0000; }
+#red-shade4 { background-color: #dc0005; }
+#red-shade5 { background-color: #c80004; }
+#red-shade6 { background-color: #990003; }
+
+/* Orange shades */
+#orange-shade1 { background-color: #ffc99d; color: #000; }
+#orange-shade2 { background-color: #ffa472; color: #000; }
+#orange-shade3 { background-color: #ff9c59; color: #000; }
+#orange-shade4 { background-color: #ff7e26; color: #000; }
+#orange-shade5 { background-color: #ff580f; color: #000; }
+#orange-shade6 { background-color: #e64a00; color: #000; }
+
+/* Yellow shades */
+#yellow-shade1 { background-color: #fffbe9; color: #000; }
+#yellow-shade2 { background-color: #fffed9; color: #000; }
+#yellow-shade3 { background-color: #fff9ba; color: #000; }
+#yellow-shade4 { background-color: #fff47c; color: #000; }
+#yellow-shade5 { background-color: #ffdd00; color: #000; }
+#yellow-shade6 { background-color: #ffcc00; color: #000; }
+
+/* Green shades */
+#green-shade1 { background-color: #a4fba6; color: #000; }
+#green-shade2 { background-color: #4ae54a; }
+#green-shade3 { background-color: #30cb00; }
+#green-shade4 { background-color: #0f9200; }
+#green-shade5 { background-color: #006203; }
+#green-shade6 { background-color: #004b02; }
+
+/* Blue shades */
+#blue-shade1 { background-color: #afe3ff; color: #000; }
+#blue-shade2 { background-color: #53abff; }
+#blue-shade3 { background-color: #0060ff; }
+#blue-shade4 { background-color: #0034c3; }
+#blue-shade5 { background-color: #0d0772; }
+#blue-shade6 { background-color: #00004d; }
+
+/* Purple shades */
+#purple-shade1 { background-color: #f3d0ff; color: #000; }
+#purple-shade2 { background-color: #e4a7ff; }
+#purple-shade3 { background-color: #8800e7; }
+#purple-shade4 { background-color: #4908b0; }
+#purple-shade5 { background-color: #2f0140; }
+#purple-shade6 { background-color: #1d0033; }
+
+/* Pink shades */
+#pink-shade1 { background-color: #ffccdd; color: #000; }
+#pink-shade2 { background-color: #ff99bb; }
+#pink-shade3 { background-color: #ff6699; }
+#pink-shade4 { background-color: #ff3377; }
+#pink-shade5 { background-color: #ff0055; }
+#pink-shade6 { background-color: #cc0044; }
+
+.section {
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section .example {
+    margin-bottom: 30px;
+}
+
+.section .example h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.section .example .example-text {
+    color: #444;
+    line-height: 1.5;
+}
+
+.section .icon {
+    font-size: 2em; /* Adjust size based on your icon library */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Adjust as necessary */
+}
+
+/* Placeholder styles for icons (using Font Awesome as an example) */
+.section .icon i {
+    color: #555;
+}
+
+/* Additional styling specific to the Icons section */
+.icons .icon {
+    height: 80px; /* Adjust for larger icons */
+}
+
